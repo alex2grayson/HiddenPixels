@@ -1,0 +1,106 @@
+.app-surface {
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 20%, rgba(79, 70, 229, 0.15), transparent 35%),
+    radial-gradient(circle at 80% 10%, rgba(16, 185, 129, 0.12), transparent 30%),
+    #0b1221;
+  padding: 1.5rem;
+}
+
+.shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  color: #e5e7eb;
+}
+
+.main-content {
+  padding: 1rem 0 2rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(12, 18, 32, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.hero-title {
+  font-size: 2rem;
+  margin: 0.25rem 0;
+  letter-spacing: -0.02em;
+  color: #f9fafb;
+}
+
+.hero-subtitle {
+  margin: 0.25rem 0 1.25rem;
+  color: #cbd5e1;
+  max-width: 640px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.hero-panel {
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+}
+
+.hero-chip {
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.panel-area {
+  margin-top: 1.5rem;
+}
+
+.tab-button {
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e5e7eb;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.tab-button.active {
+  background: linear-gradient(120deg, #6366f1, #22c55e);
+  color: #0b1221;
+  border-color: transparent;
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.35);
+}
+
+.tab-button.inactive:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  color: #a5b4fc;
+  margin: 0;
+}
+
+@media (max-width: 960px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-panel {
+    grid-template-columns: 1fr;
+  }
+}

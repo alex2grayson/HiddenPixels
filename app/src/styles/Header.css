@@ -1,0 +1,38 @@
+.header {
+  background: transparent;
+}
+
+.header-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0 1rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.header-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #f9fafb;
+  letter-spacing: -0.01em;
+}
+
+.header-badge {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(79, 70, 229, 0.16);
+  color: #c7d2fe;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
